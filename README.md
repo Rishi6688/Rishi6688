@@ -113,7 +113,12 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Rishi6688&theme=onestar&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="GitHub Trophies"/>
+
+  ![Commits](https://img.shields.io/badge/Total_Commits-20+-a855f7?style=for-the-badge&logo=git&logoColor=white)
+  ![Repos](https://img.shields.io/badge/Repositories-2+-ec4899?style=for-the-badge&logo=github&logoColor=white)
+  ![Languages](https://img.shields.io/badge/Languages-HTML·CSS·JS·Java·Python-06b6d4?style=for-the-badge&logoColor=white)
+  ![Since](https://img.shields.io/badge/On_GitHub_Since-2023-ff9933?style=for-the-badge&logo=github&logoColor=white)
+
 </div>
 
 <br/>
