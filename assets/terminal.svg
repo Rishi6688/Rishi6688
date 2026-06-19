@@ -1,90 +1,191 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 270" width="860" height="270">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380">
   <defs>
     <style>
       @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(5px); }
-        to   { opacity: 1; transform: translateY(0);   }
+        from { opacity:0; transform:translateY(6px); }
+        to   { opacity:1; transform:translateY(0);   }
       }
-      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      @keyframes blink   { 0%,100%{opacity:1} 49%{opacity:1} 50%,99%{opacity:0} }
+      @keyframes pulse   { 0%,100%{opacity:.6} 50%{opacity:1} }
+      @keyframes slideIn { from{stroke-dashoffset:300} to{stroke-dashoffset:0} }
 
-      .l1 { opacity:0; animation: fadeUp .4s ease  .6s forwards; }
-      .l2 { opacity:0; animation: fadeUp .4s ease 1.4s forwards; }
-      .l3 { opacity:0; animation: fadeUp .4s ease 2.4s forwards; }
-      .l4 { opacity:0; animation: fadeUp .4s ease 3.0s forwards; }
-      .l5 { opacity:0; animation: fadeUp .4s ease 3.8s forwards; }
-      .l6 { opacity:0; animation: fadeUp .4s ease 4.4s forwards; }
-      .l7 { opacity:0; animation: fadeUp .4s ease 5.2s forwards; }
-      .l8 { opacity:0; animation: fadeUp .4s ease 5.8s forwards; }
-      .cur { animation: blink .75s step-start infinite; }
+      .l1  { opacity:0; animation: fadeUp .35s ease  .5s  both; }
+      .l2  { opacity:0; animation: fadeUp .35s ease  1.1s both; }
+      .l3  { opacity:0; animation: fadeUp .35s ease  1.7s both; }
+      .l4  { opacity:0; animation: fadeUp .35s ease  2.2s both; }
+      .l5  { opacity:0; animation: fadeUp .35s ease  2.8s both; }
+      .l6  { opacity:0; animation: fadeUp .35s ease  3.4s both; }
+      .l7  { opacity:0; animation: fadeUp .35s ease  4.0s both; }
+      .l8  { opacity:0; animation: fadeUp .35s ease  4.6s both; }
+      .l9  { opacity:0; animation: fadeUp .35s ease  5.2s both; }
+      .l10 { opacity:0; animation: fadeUp .35s ease  5.8s both; }
+      .l11 { opacity:0; animation: fadeUp .35s ease  6.4s both; }
+      .cur { animation: blink .8s step-start 1s infinite; }
+      .dot { animation: pulse 2s ease-in-out infinite; }
     </style>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="topbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#181825"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%"   stop-color="#a855f7"/>
       <stop offset="100%" stop-color="#06b6d4"/>
     </linearGradient>
   </defs>
 
-  <!-- Window shell -->
-  <rect width="860" height="270" rx="12" fill="#0d1117"/>
+  <!-- ── Outer window ── -->
+  <rect width="860" height="380" rx="14" fill="#1e1e2e"/>
 
-  <!-- Title bar -->
-  <rect width="860" height="40" rx="12" fill="#161b22"/>
-  <rect y="28" width="860" height="12" fill="#161b22"/>
+  <!-- ── Title bar ── -->
+  <rect width="860" height="44" rx="14" fill="url(#topbar)"/>
+  <rect y="30" width="860" height="14" fill="#1e1e2e"/>
 
   <!-- Top accent line -->
-  <rect width="860" height="2" rx="1" fill="url(#bar)" opacity=".7"/>
+  <rect width="860" height="2.5" rx="1" fill="url(#accent)"/>
 
-  <!-- Traffic-light dots -->
-  <circle cx="24" cy="20" r="6" fill="#ff5f57"/>
-  <circle cx="44" cy="20" r="6" fill="#febc2e"/>
-  <circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <!-- Traffic dots -->
+  <circle cx="22" cy="22" r="7" fill="#ff5f57"/>
+  <circle cx="44" cy="22" r="7" fill="#febc2e"/>
+  <circle cx="66" cy="22" r="7" fill="#28c840"/>
 
-  <!-- Window title -->
-  <text x="430" y="25" font-family="'Courier New',monospace" font-size="12" fill="#6e7681" text-anchor="middle">rishita@dev  ~  /projects</text>
+  <!-- Animated dot on traffic lights -->
+  <circle class="dot" cx="22" cy="22" r="3" fill="#ff8080" opacity=".7"/>
 
-  <!-- ── Line 1 : prompt ── -->
+  <!-- File tabs -->
+  <rect x="92"  y="10" width="120" height="24" fill="#a855f7" rx="5" opacity=".15"/>
+  <text x="102" y="26" font-family="monospace" font-size="12" fill="#a855f7">index.html</text>
+
+  <rect x="222" y="10" width="120" height="24" fill="#313244" rx="5"/>
+  <text x="232" y="26" font-family="monospace" font-size="12" fill="#6e7281">script.js</text>
+
+  <rect x="352" y="10" width="108" height="24" fill="#313244" rx="5"/>
+  <text x="362" y="26" font-family="monospace" font-size="12" fill="#6e7281">style.css</text>
+
+  <!-- Window title right -->
+  <text x="750" y="27" font-family="monospace" font-size="11" fill="#45475a" text-anchor="middle">Rishi6688 — VS Code</text>
+
+  <!-- ── Sidebar ── -->
+  <rect x="0" y="44" width="44" height="336" fill="#181825"/>
+  <!-- Sidebar icons (simplified) -->
+  <rect x="12" y="60"  width="20" height="20" rx="3" fill="#a855f7" opacity=".25"/>
+  <rect x="12" y="92"  width="20" height="20" rx="3" fill="#45475a" opacity=".4"/>
+  <rect x="12" y="124" width="20" height="20" rx="3" fill="#45475a" opacity=".4"/>
+  <rect x="12" y="156" width="20" height="20" rx="3" fill="#45475a" opacity=".4"/>
+
+  <!-- ── Line numbers bg ── -->
+  <rect x="44" y="44" width="38" height="336" fill="#1a1a2e"/>
+
+  <!-- ── Code area bg ── -->
+  <rect x="82" y="44" width="778" height="336" fill="#1e1e2e"/>
+
+  <!-- ── Active line highlight ── -->
+  <rect class="l11" x="82" y="312" width="778" height="18" fill="#a855f7" opacity=".07" rx="2"/>
+
+  <!-- ── Line numbers ── -->
+  <text x="72" y="73"  font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">1</text>
+  <text x="72" y="93"  font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">2</text>
+  <text x="72" y="113" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">3</text>
+  <text x="72" y="133" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">4</text>
+  <text x="72" y="153" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">5</text>
+  <text x="72" y="173" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">6</text>
+  <text x="72" y="193" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">7</text>
+  <text x="72" y="213" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">8</text>
+  <text x="72" y="233" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">9</text>
+  <text x="72" y="253" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">10</text>
+  <text x="72" y="273" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">11</text>
+  <text x="72" y="293" font-family="monospace" font-size="12" fill="#45475a" text-anchor="end">12</text>
+  <text x="72" y="313" font-family="monospace" font-size="12" fill="#a855f7" text-anchor="end">13</text>
+
+  <!-- ── Code lines ── -->
+
+  <!-- Line 1: comment -->
   <g class="l1">
-    <text x="24" y="72" font-family="'Courier New',monospace" font-size="13" fill="#a855f7">❯ </text>
-    <text x="44" y="72" font-family="'Courier New',monospace" font-size="13" fill="#e6edf3">whoami</text>
+    <text x="96" y="73" font-family="monospace" font-size="13" fill="#6272a4">// 🚀 Rishita Reddy — CS Student &amp; Web Developer</text>
   </g>
 
-  <!-- ── Line 2 : output ── -->
+  <!-- Line 2: blank -->
+
+  <!-- Line 3: const skills -->
   <g class="l2">
-    <text x="24" y="95" font-family="'Courier New',monospace" font-size="13" fill="#28c840">Rishita Reddy</text>
-    <text x="150" y="95" font-family="'Courier New',monospace" font-size="13" fill="#6e7681"> — CS Student &amp; Web Developer 🚀</text>
+    <text x="96" y="113" font-family="monospace" font-size="13" fill="#cba6f7">const </text>
+    <text x="148" y="113" font-family="monospace" font-size="13" fill="#89dceb">skills</text>
+    <text x="208" y="113" font-family="monospace" font-size="13" fill="#cdd6f4"> = [</text>
   </g>
 
-  <!-- ── Line 3 : prompt ── -->
+  <!-- Line 4 -->
   <g class="l3">
-    <text x="24" y="126" font-family="'Courier New',monospace" font-size="13" fill="#a855f7">❯ </text>
-    <text x="44" y="126" font-family="'Courier New',monospace" font-size="13" fill="#e6edf3">cat skills.txt</text>
+    <text x="116" y="133" font-family="monospace" font-size="13" fill="#a6e3a1">'HTML5'</text>
+    <text x="182" y="133" font-family="monospace" font-size="13" fill="#cdd6f4">, </text>
+    <text x="198" y="133" font-family="monospace" font-size="13" fill="#a6e3a1">'CSS3'</text>
+    <text x="258" y="133" font-family="monospace" font-size="13" fill="#cdd6f4">, </text>
+    <text x="274" y="133" font-family="monospace" font-size="13" fill="#a6e3a1">'JavaScript'</text>
+    <text x="374" y="133" font-family="monospace" font-size="13" fill="#cdd6f4">, </text>
+    <text x="390" y="133" font-family="monospace" font-size="13" fill="#a6e3a1">'Java'</text>
+    <text x="442" y="133" font-family="monospace" font-size="13" fill="#cdd6f4">, </text>
+    <text x="458" y="133" font-family="monospace" font-size="13" fill="#a6e3a1">'Python'</text>
   </g>
 
-  <!-- ── Line 4 : output ── -->
+  <!-- Line 5: closing bracket -->
   <g class="l4">
-    <text x="24" y="149" font-family="'Courier New',monospace" font-size="13" fill="#06b6d4">[ HTML5  CSS3  JavaScript  Java  Python  Git ]</text>
+    <text x="96" y="153" font-family="monospace" font-size="13" fill="#cdd6f4">]</text>
   </g>
 
-  <!-- ── Line 5 : prompt ── -->
+  <!-- Line 6: blank -->
+
+  <!-- Line 7: function -->
   <g class="l5">
-    <text x="24" y="180" font-family="'Courier New',monospace" font-size="13" fill="#a855f7">❯ </text>
-    <text x="44" y="180" font-family="'Courier New',monospace" font-size="13" fill="#e6edf3">git log --oneline --graph</text>
+    <text x="96" y="193" font-family="monospace" font-size="13" fill="#cba6f7">function </text>
+    <text x="174" y="193" font-family="monospace" font-size="13" fill="#89b4fa">buildProject</text>
+    <text x="286" y="193" font-family="monospace" font-size="13" fill="#cdd6f4">(name) {</text>
   </g>
 
-  <!-- ── Line 6 : commit ── -->
+  <!-- Line 8 -->
   <g class="l6">
-    <text x="24" y="203" font-family="'Courier New',monospace" font-size="13" fill="#ec4899">* a3f8c2d </text>
-    <text x="128" y="203" font-family="'Courier New',monospace" font-size="13" fill="#6e7681">🎬 Built Allien — Movie &amp; Event Ticket Booking Platform</text>
+    <text x="116" y="213" font-family="monospace" font-size="13" fill="#cba6f7">return </text>
+    <text x="168" y="213" font-family="monospace" font-size="13" fill="#cdd6f4">{</text>
   </g>
 
-  <!-- ── Line 7 : commit ── -->
+  <!-- Line 9 -->
   <g class="l7">
-    <text x="24" y="222" font-family="'Courier New',monospace" font-size="13" fill="#ec4899">* 9d12e77 </text>
-    <text x="128" y="222" font-family="'Courier New',monospace" font-size="13" fill="#6e7681">✨ Interactive seat booking with 100-seat grid</text>
+    <text x="136" y="233" font-family="monospace" font-size="13" fill="#89dceb">developer</text>
+    <text x="222" y="233" font-family="monospace" font-size="13" fill="#cdd6f4">: </text>
+    <text x="236" y="233" font-family="monospace" font-size="13" fill="#a6e3a1">'Rishita Reddy'</text>
+    <text x="366" y="233" font-family="monospace" font-size="13" fill="#cdd6f4">,</text>
   </g>
 
-  <!-- ── Line 8 : next prompt + blinking cursor ── -->
+  <!-- Line 10 -->
   <g class="l8">
-    <text x="24" y="250" font-family="'Courier New',monospace" font-size="13" fill="#a855f7">❯ </text>
-    <rect class="cur" x="44" y="237" width="8" height="15" rx="1" fill="#a855f7"/>
+    <text x="136" y="253" font-family="monospace" font-size="13" fill="#89dceb">project</text>
+    <text x="196" y="253" font-family="monospace" font-size="13" fill="#cdd6f4">: name,</text>
   </g>
+
+  <!-- Line 11 -->
+  <g class="l9">
+    <text x="136" y="273" font-family="monospace" font-size="13" fill="#89dceb">status</text>
+    <text x="192" y="273" font-family="monospace" font-size="13" fill="#cdd6f4">: </text>
+    <text x="206" y="273" font-family="monospace" font-size="13" fill="#a6e3a1">'shipped ✅'</text>
+  </g>
+
+  <!-- Line 12: closing -->
+  <g class="l10">
+    <text x="116" y="293" font-family="monospace" font-size="13" fill="#cdd6f4">} }</text>
+  </g>
+
+  <!-- Line 13: call with cursor -->
+  <g class="l11">
+    <text x="96" y="313" font-family="monospace" font-size="13" fill="#89b4fa">buildProject</text>
+    <text x="208" y="313" font-family="monospace" font-size="13" fill="#cdd6f4">(</text>
+    <text x="218" y="313" font-family="monospace" font-size="13" fill="#a6e3a1">'Allien — Movie Booking'</text>
+    <text x="414" y="313" font-family="monospace" font-size="13" fill="#cdd6f4">)</text>
+    <!-- Blinking cursor -->
+    <rect class="cur" x="426" y="300" width="9" height="16" rx="1" fill="#a855f7"/>
+  </g>
+
+  <!-- ── Status bar ── -->
+  <rect x="0" y="356" width="860" height="24" fill="#a855f7" opacity=".9" rx="0"/>
+  <rect x="0" y="356" width="860" height="24" fill="#181825"/>
+  <rect x="0" y="356" width="860" height="2"  fill="url(#accent)"/>
+  <text x="96"  y="372" font-family="monospace" font-size="11" fill="#6e7281">⎇ main</text>
+  <text x="200" y="372" font-family="monospace" font-size="11" fill="#6e7281">✓ No errors</text>
+  <text x="680" y="372" font-family="monospace" font-size="11" fill="#6e7281">HTML · UTF-8 · Ln 13 Col 1</text>
 </svg>
