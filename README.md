@@ -113,7 +113,7 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Rishi6688&theme=radical&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" alt="GitHub Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=Rishi6688&theme=onestar&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="GitHub Trophies"/>
 </div>
 
 <br/>
@@ -127,7 +127,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rishi6688&theme=radical&hide_border=true&background=0d1117&ring=a855f7&fire=ec4899&currStreakLabel=a855f7" alt="GitHub Streak" width="580"/>
+  <img src="https://streak-stats.demolab.com/?user=Rishi6688&theme=radical&hide_border=true&background=0d1117&ring=a855f7&fire=ec4899&currStreakLabel=a855f7" alt="GitHub Streak" width="580"/>
 </div>
 
 ---
@@ -149,8 +149,6 @@
     <img alt="Snake animation" src="https://raw.githubusercontent.com/Rishi6688/Rishi6688/output/github-contribution-grid-snake-dark.svg" width="100%"/>
   </picture>
 </div>
-
-> ⚙️ **To activate:** Go to your repo → **Actions** tab → click **"Generate Snake Animation"** → click **"Run workflow"** → wait 2 minutes and refresh!
 
 ---
 
