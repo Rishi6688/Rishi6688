@@ -39,7 +39,9 @@
 ---
 
 <div align="center">
-  <img src="assets/coding.gif" alt="Coding Animation" width="100%"/>
+
+![Coding Animation](assets/coding.gif.mp4)
+
 </div>
 
 ---
