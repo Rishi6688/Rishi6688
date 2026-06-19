@@ -39,9 +39,7 @@
 ---
 
 <div align="center">
-
-![Coding Animation](assets/coding.gif.mp4)
-
+  <img src="assets/terminal.svg" alt="Terminal Animation" width="100%"/>
 </div>
 
 ---
@@ -148,9 +146,11 @@
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Rishi6688/Rishi6688/output/github-contribution-grid-snake-dark.svg"/>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rishi6688/Rishi6688/output/github-contribution-grid-snake.svg"/>
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/Rishi6688/Rishi6688/output/github-contribution-grid-snake.svg" width="100%"/>
+    <img alt="Snake animation" src="https://raw.githubusercontent.com/Rishi6688/Rishi6688/output/github-contribution-grid-snake-dark.svg" width="100%"/>
   </picture>
 </div>
+
+> ⚙️ **To activate:** Go to your repo → **Actions** tab → click **"Generate Snake Animation"** → click **"Run workflow"** → wait 2 minutes and refresh!
 
 ---
 
