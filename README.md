@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Rishita Reddy" width="100%"/>
+  <img src="assets/banner.png" alt="Rishita Reddy" width="100%"/>
 </div>
 
 <br/>
