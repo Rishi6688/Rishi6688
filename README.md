@@ -50,14 +50,15 @@
 <tr>
 <td valign="top" width="58%">
 
-- 🎓 **CS Student** passionate about turning ideas into real web products
-- 🌐 Built **Allien** — a complete movie & event ticket booking platform
-- 💻 I build web apps with **HTML5, CSS3 & Vanilla JavaScript**
-- ☕ Learning **Java** and **Python** for algorithms & backend logic
+- 🎓 **Information Science & Engineering** @ **CMR Institute of Technology**, Bengaluru *(CGPA 8.55 · Class of 2028)*
+- 🚀 *"Not waiting to graduate to start building."*
+- 🌐 I build **real web apps** — a full **movie ticket-booking platform**, an **expense tracker**, and a **sports news & marketplace** site
+- 🔌 I also tinker with **hardware** — built a **voice-controlled device hub** with **Arduino + Bluetooth**
+- 💻 My toolkit: **HTML · CSS · JavaScript · Java · Python**
 - 🎨 I care about clean UI, responsive design & smooth UX
-- 🐧 Comfortable working on **Windows** & **Ubuntu**
-- 🚀 Currently exploring full-stack web development
-- 💬 Ask me about **HTML, CSS, JavaScript, Java, Python**
+- 📜 Certified in **ML A–Z**, **Complete Python Bootcamp** & **Operating Systems (NPTEL)**
+- 🌐 Portfolio → **[itsrishiportfolio.netlify.app](https://itsrishiportfolio.netlify.app/)**
+- 💬 Ask me about **HTML, CSS, JavaScript, Java & Python**
 - 📫 Reach me at **rishireddy696@gmail.com**
 
 </td>
@@ -98,13 +99,16 @@
 
 ---
 
-## 🚀 Featured Project
+## 🚀 Featured Projects
 
 <div align="center">
 
 | Project | Description | Tech |
 |---|---|---|
-| 🎬 [**Allien — Movie Ticket Booking**](https://github.com/Rishi6688/Movie-Proejct) | Full ticket booking platform — browse movies, watch trailers, pick seats on a 100-seat interactive grid, and checkout with payment & promo codes. Zero dependencies. | HTML5 · CSS3 · JS |
+| 🎬 [**Allien — Movie Ticket Booking**](https://github.com/Rishi6688/Movie-Proejct) | Full ticket-booking platform — browse movies, watch trailers, pick seats on a 100-seat interactive grid, and checkout with payment & promo codes. Zero dependencies. | HTML5 · CSS3 · JS |
+| 💸 **Expense Tracker** | Web app to record & manage daily expenses with a clean, simple UI and clear data tracking. | HTML · CSS · JS |
+| 🏟️ **Sports News & Marketplace** | Sports site sharing news, live updates & analysis, plus a marketplace for merch & tickets. | Google Sites · HTML · CSS |
+| 🎙️ **Voice Recognition Hub** | Voice-controlled device system — Arduino + Bluetooth (HC-05) + a mobile app to send commands. | Arduino · IoT |
 
 </div>
 
@@ -114,8 +118,8 @@
 
 <div align="center">
 
-  ![Commits](https://img.shields.io/badge/Total_Commits-20+-a855f7?style=for-the-badge&logo=git&logoColor=white)
-  ![Repos](https://img.shields.io/badge/Repositories-2+-ec4899?style=for-the-badge&logo=github&logoColor=white)
+  ![Commits](https://img.shields.io/badge/Total_Commits-22-a855f7?style=for-the-badge&logo=git&logoColor=white)
+  ![Repos](https://img.shields.io/badge/Repositories-6-ec4899?style=for-the-badge&logo=github&logoColor=white)
   ![Languages](https://img.shields.io/badge/Languages-HTML·CSS·JS·Java·Python-06b6d4?style=for-the-badge&logoColor=white)
   ![Since](https://img.shields.io/badge/On_GitHub_Since-2023-ff9933?style=for-the-badge&logo=github&logoColor=white)
 
@@ -124,9 +128,9 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rishi6688&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0d1117&title_color=a855f7&icon_color=ec4899&text_color=c9d1d9" alt="GitHub Stats" height="175"/>
+  <img src="assets/stats.svg" alt="GitHub snapshot — 22 commits · 6 repos · 4 languages · since 2023" height="175"/>
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rishi6688&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9" alt="Top Languages" height="175"/>
+  <img src="assets/top-langs.svg" alt="Most used languages" height="175"/>
 </div>
 
 <br/>

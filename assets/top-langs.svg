@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="175" viewBox="0 0 440 175" role="img" aria-label="Most Used Languages">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#1a0f2e"/>
+    </linearGradient>
+    <clipPath id="barclip"><rect x="24" y="58" width="392" height="11" rx="5.5"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="438" height="173" rx="14" fill="url(#bg)" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="24" y="32" font-family="Segoe UI,Verdana,sans-serif" font-size="16" font-weight="700" fill="#a855f7">Most Used Languages</text>
+  <line x1="24" y1="44" x2="416" y2="44" stroke="#33285c" stroke-width="1"/>
+
+  <!-- stacked proportion bar: HTML 57.8 / TS 22.9 / JS 13.0 / CSS 6.3 -->
+  <g clip-path="url(#barclip)">
+    <rect x="24"    y="58" width="226.6" height="11" fill="#e34c26"/>
+    <rect x="250.6" y="58" width="89.8"  height="11" fill="#3178c6"/>
+    <rect x="340.4" y="58" width="51.0"  height="11" fill="#f1e05a"/>
+    <rect x="391.4" y="58" width="24.6"  height="11" fill="#563d7c"/>
+  </g>
+
+  <!-- legend -->
+  <g font-family="Segoe UI,Verdana,sans-serif" font-size="12.5" fill="#c9d1d9">
+    <circle cx="30"  cy="98"  r="5" fill="#e34c26"/><text x="42"  y="102">HTML&#160;&#160;57.8%</text>
+    <circle cx="30"  cy="126" r="5" fill="#3178c6"/><text x="42"  y="130">TypeScript&#160;&#160;22.9%</text>
+    <circle cx="244" cy="98"  r="5" fill="#f1e05a"/><text x="256" y="102">JavaScript&#160;&#160;13.0%</text>
+    <circle cx="244" cy="126" r="5" fill="#563d7c"/><text x="256" y="130">CSS&#160;&#160;6.3%</text>
+  </g>
+</svg>
